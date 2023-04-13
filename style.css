@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(45deg, #fc466b, #65fb3f);
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+}
+input,
+select,
+textarea {
+  background: transparent;
+  width: 200px;
+  padding: 1em;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #160707;
+  font-family: Montserrat, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control button {
+  align-self: flex-start;
+  border-radius: 3px;
+  height: 30px;
+  width: 90px;
+  color: white;
+  background-color: rgb(104, 104, 167);
+}

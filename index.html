@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="todo-application">
+      <form id="todo">
+        <fieldset>
+          <legend align="center">Add task</legend>
+          <label for="task-title"> Enter the task: </label>
+          <input type="text" id="task-title" required />
+          <label for="due-date"> Due date: </label>
+          <input type="date" id="due-date" required />
+          <label for="priority-index">Priority:</label>
+          <select id="priority-index">
+            <option value="none" selected>None</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <label for="task-decription"> Description: </label>
+          <textarea rows="3" id="task-description"></textarea>
+          <div class="form-control">
+            <button type="submit" value="Submit">Add task</button>
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <nav class="btn-group task-manager" aria-label="Task Manager" role="group">
+      <ul>
+        <li class="due-task-list" cotenteditable="true">
+          <button class="due-task">Due Task</button>
+          <label for="sort-data">SortBy</label>
+          <select id="sort-data">
+            <option value="none" selected>None</option>
+            <option value="duedate">Due Date</option>
+            <option value="priority">Priority</option>
+          </select>
+        </li>
+        <li class="active-task-list">
+          <button class="active-task">Active Task</button>
+        </li>
+        <li class="done-task-list">
+          <button class="completed-task">Completed Task</button>
+        </li>
+      </ul>
+    </nav>
+    <script src="script.js" defer />
+  </body>
+</html>
